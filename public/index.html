@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klyon - Micro Entreprise</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <img src="logo.png" alt="Klyon Logo">
+            </a>
+            <ul class="menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>Bienvenue chez Klyon</h1>
+            <p>Nous accompagnons votre entreprise avec des solutions informatiques sur mesure.</p>
+            <a href="#contact" class="btn hero-btn">Nous contacter</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="service-list">
+            <div class="service-item" onmouseenter="toggleDetails('details1')" onmouseleave="hideDetails('details1')">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Développement Web</h3>
+                <p class="short-info">Du front-end au back-end, tout pour un site performant.</p>
+                <div class="service-details" id="details1">
+                    <p>
+                        Je conçois des sites modernes et optimisés, comprenant le design, 
+                        le développement front-end, et l'intégration back-end. 
+                        Je peux également héberger votre site sur GitHub ou d'autres plateformes 
+                        pour garantir une mise en ligne rapide et fiable.
+                    </p>
+                </div>
+            </div>
+            <div class="service-item" onmouseenter="toggleDetails('details2')" onmouseleave="hideDetails('details2')">
+                <i class="fas fa-cogs"></i>
+                <h3>Développement Personnalisé</h3>
+                <p class="short-info">Des solutions adaptées à vos besoins spécifiques.</p>
+                <div class="service-details" id="details2">
+                    <p>
+                        Besoin d'une solution sur mesure ? Je maîtrise des langages comme Python, 
+                        Java, SQL, C, et C++. Que ce soit pour automatiser un processus, développer 
+                        des programmes internes pour votre entreprise ou résoudre des défis spécifiques, 
+                        je suis là pour concrétiser vos idées.
+                    </p>
+                </div>
+            </div>
+            <div class="service-item" onmouseenter="toggleDetails('details3')" onmouseleave="hideDetails('details3')">
+                <i class="fas fa-tools"></i>
+                <h3>Support & Assistance Informatique</h3>
+                <p class="short-info">Accompagnement technique pour Windows, macOS et plus.</p>
+                <div class="service-details" id="details3">
+                    <p>
+                        Je propose un accompagnement pour configurer vos systèmes, 
+                        comme des installations spécifiques (ex. dual-boot Windows/Linux), 
+                        ou des optimisations. Que vous soyez sur Windows ou Apple, 
+                        je peux résoudre vos problèmes techniques et vous guider pour 
+                        maximiser vos outils.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>Klyon c'est qui ? </h2>
+        <div class="about-content">
+            <div class="about-left">
+                <div class="profile-picture">
+                    <img src="lolo.jpg" alt="Photo du fondateur" class="profile-img">
+                </div>
+            </div>
+            <div class="about-right">
+                <p>
+                    Bonjour ! Je suis Lorenzo.F <strong>le fondateur de Klyon</strong>, une micro-entreprise spécialisée dans l'accompagnement informatique. 
+                    Actuellement, je suis étudiant en <strong>4ème année de cursus d'ingénieur informatique</strong> à <strong>Epitech Marseille</strong>. 
+                    Passionné par la technologie et la résolution de problèmes, j'accompagne les entreprises et les particuliers dans leurs défis numériques.
+                </p>
+                <a href="https://www.linkedin.com/in/zl3" target="_blank" class="linkedin-link">
+                    <i class="fab fa-linkedin"></i> Retrouvez-moi sur LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Klyon. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
